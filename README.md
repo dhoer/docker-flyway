@@ -4,7 +4,7 @@
 
 [docker]: https://hub.docker.com/r/dhoer/flyway/
 
-Dockerized flyway cli with an option for mysql driver being included.
+Dockerized [flyway command-line tool](https://flywaydb.org/getstarted/firststeps/commandline) with an option for mysql driver being included.
 
 ## Supported tags and respective `Dockerfile` links
 
