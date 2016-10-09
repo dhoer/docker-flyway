@@ -1,4 +1,4 @@
-# docker-flyway
+# Docker Flyway
 
 [![Docker Auto Build](https://img.shields.io/docker/automated/dhoer/flyway.svg?style=flat-square)][docker]
 
