@@ -4,7 +4,7 @@
 
 [docker]: https://hub.docker.com/r/dhoer/flyway/
 
-Dockerized [flyway command-line tool](https://flywaydb.org/getstarted/firststeps/commandline) with an option for mariadb driver updated or mysql driver included.
+Dockerized [flyway command-line tool](https://flywaydb.org/getstarted/firststeps/commandline) with options for updated mariadb driver or added mysql driver.
 
 ## Supported tags and respective `Dockerfile` links
 
