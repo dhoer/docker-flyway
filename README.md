@@ -8,10 +8,10 @@ Dockerized flyway cli with an option for mysql driver being included.
 
 ## Supported tags and respective `Dockerfile` links
 
--	[`4.0.3`, `4.0`, `4`, `latest` (*4.0/Dockerfile*)](https://github.com/dhoer/docker-flyway/blob/master/Dockerfile)
--	[`4.0.3-alpine`, `4.0-alpine`, `4-alpine`, `alpine` (*4.0/alpine/Dockerfile*)](https://github.com/dhoer/docker-flyway/blob/master/alpine/Dockerfile)
--	[`4.0.3-mysql-5.1.40`, `4.0-mysql-5.1`, `4-mysql-5`, `mysql` (*4.0-mysql-5.1/Dockerfile*)](https://github.com/dhoer/docker-flyway/blob/master/Dockerfile)
--	[`4.0.3-mysql-5.1.40-alpine`, `4.0-mysql-5.1-alpine`, `4-mysql-5-alpine`, `mysql-alpine` (*4.0-mysql-5.1/alpine/Dockerfile*)](https://github.com/dhoer/docker-flyway/blob/master/alpine/Dockerfile)
+-	[`4.0.3`, `4.0`, `4`, `latest` (*4.0/Dockerfile*)](https://github.com/dhoer/docker-flyway/blob/master/4.0/Dockerfile)
+-	[`4.0.3-alpine`, `4.0-alpine`, `4-alpine`, `alpine` (*4.0/alpine/Dockerfile*)](https://github.com/dhoer/docker-flyway/blob/master/4.0/alpine/Dockerfile)
+-	[`4.0.3-mysql-5.1.40`, `4.0-mysql-5.1`, `4-mysql-5`, `mysql` (*4.0-mysql-5.1/Dockerfile*)](https://github.com/dhoer/docker-flyway/blob/master/4.0-mysql-5.1/Dockerfile)
+-	[`4.0.3-mysql-5.1.40-alpine`, `4.0-mysql-5.1-alpine`, `4-mysql-5-alpine`, `mysql-alpine` (*4.0-mysql-5.1/alpine/Dockerfile*)](https://github.com/dhoer/docker-flyway/blob/master/4.0-mysql-5.1/alpine/Dockerfile)
 
 ## Getting started
 
