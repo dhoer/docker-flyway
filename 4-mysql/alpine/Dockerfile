@@ -1,8 +1,10 @@
 FROM openjdk:8-jre-alpine
 
-WORKDIR /flyway
+RUN addgroup flyway && adduser -D -G flyway flyway
 
 RUN apk --no-cache add openssl
+
+WORKDIR /flyway
 
 ENV FLYWAY_VERSION 4.0.3
 
@@ -17,6 +19,10 @@ ENV MYSQL_DRIVER_VERSION 5.1.40
 
 RUN wget https://repo1.maven.org/maven2/mysql/mysql-connector-java/${MYSQL_DRIVER_VERSION}/mysql-connector-java-${MYSQL_DRIVER_VERSION}.jar \
   && mv mysql-connector-java-${MYSQL_DRIVER_VERSION}.jar drivers
+
+RUN chown -R flyway:flyway /flyway
+
+USER flyway
 
 ENTRYPOINT ["flyway"]
 CMD ["--help"]

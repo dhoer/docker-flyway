@@ -1,8 +1,10 @@
 FROM openjdk:8-jre-alpine
 
-WORKDIR /flyway
+RUN addgroup flyway && adduser -D -G flyway flyway
 
 RUN apk --no-cache add openssl
+
+WORKDIR /flyway
 
 ENV FLYWAY_VERSION 4.0.3
 
@@ -18,6 +20,10 @@ ENV MARIADB_DRIVER_VERSION 1.5.3
 
 RUN wget https://repo1.maven.org/maven2/org/mariadb/jdbc/mariadb-java-client/${MARIADB_DRIVER_VERSION}/mariadb-java-client-${MARIADB_DRIVER_VERSION}.jar \
   && mv mariadb-java-client-${MARIADB_DRIVER_VERSION}.jar drivers
+
+RUN chown -R flyway:flyway /flyway
+
+USER flyway
 
 ENTRYPOINT ["flyway"]
 CMD ["--help"]

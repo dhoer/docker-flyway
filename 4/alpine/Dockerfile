@@ -1,8 +1,10 @@
 FROM openjdk:8-jre-alpine
 
-WORKDIR /flyway
+RUN addgroup flyway && adduser -D -G flyway flyway
 
 RUN apk --no-cache add openssl
+
+WORKDIR /flyway
 
 ENV FLYWAY_VERSION 4.0.3
 
@@ -12,6 +14,10 @@ RUN wget https://repo1.maven.org/maven2/org/flywaydb/flyway-commandline/${FLYWAY
   && rm flyway-commandline-${FLYWAY_VERSION}.tar.gz \
   && sed -i 's/bash/sh/' /flyway/flyway \
   && ln -s /flyway/flyway /usr/local/bin/flyway
+
+RUN chown -R flyway:flyway /flyway
+
+USER flyway
 
 ENTRYPOINT ["flyway"]
 CMD ["--help"]
