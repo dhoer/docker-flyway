@@ -10,16 +10,15 @@ RUN curl -L https://repo1.maven.org/maven2/org/flywaydb/flyway-commandline/${FLY
   && tar -xzf flyway-commandline-${FLYWAY_VERSION}.tar.gz --strip-components=1 \
   && rm flyway-commandline-${FLYWAY_VERSION}.tar.gz \
   && rm drivers/mariadb-java-client-*.jar \
+  && chown -R flyway:flyway /flyway \
   && ln -s /flyway/flyway /usr/local/bin/flyway
+
+USER flyway
 
 ENV MARIADB_DRIVER_VERSION 1.5.3
 
 RUN curl -L https://repo1.maven.org/maven2/org/mariadb/jdbc/mariadb-java-client/${MARIADB_DRIVER_VERSION}/mariadb-java-client-${MARIADB_DRIVER_VERSION}.jar -o mariadb-java-client-${MARIADB_DRIVER_VERSION}.jar \
   && mv mariadb-java-client-${MARIADB_DRIVER_VERSION}.jar drivers
-
-RUN chown -R flyway:flyway /flyway
-
-USER flyway
 
 ENTRYPOINT ["flyway"]
 CMD ["--help"]
