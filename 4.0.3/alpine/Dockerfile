@@ -13,8 +13,8 @@ RUN wget https://repo1.maven.org/maven2/org/flywaydb/flyway-commandline/${FLYWAY
   && mv flyway-${FLYWAY_VERSION}/* . \
   && rm flyway-commandline-${FLYWAY_VERSION}.tar.gz \
   && sed -i 's/bash/sh/' /flyway/flyway \
-#  && chown -R flyway:flyway /flyway \
   && ln -s /flyway/flyway /usr/local/bin/flyway
+#  && chown -R flyway:flyway /flyway \
 
 #USER flyway
 
