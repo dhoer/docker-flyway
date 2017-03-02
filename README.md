@@ -12,8 +12,8 @@ Dockerized [flyway command-line tool](https://flywaydb.org/getstarted/firststeps
 -	[`4.1.1-alpine`, `4.1-alpine`, `4-alpine`, `alpine` (*4/alpine/Dockerfile*)](https://github.com/dhoer/docker-flyway/blob/master/4/alpine/Dockerfile)
 -	[`4.1.1-mariadb-1.5.8`, `4.1-mariadb-1.5`, `4-mariadb-1`, `mariadb` (*4-mariadb/Dockerfile*)](https://github.com/dhoer/docker-flyway/blob/master/4-mariadb/Dockerfile)
 -	[`4.1.1-mariadb-1.5.8-alpine`, `4.1-mariadb-1.5-alpine`, `4-mariadb-1-alpine`, `mariadb-alpine` (*4-mariadb/alpine/Dockerfile*)](https://github.com/dhoer/docker-flyway/blob/master/4-mariadb/alpine/Dockerfile)
--	[`4.1.1-mysql-5.1.40`, `4.1-mysql-5.1`, `4-mysql-5`, `mysql-5`, `mysql` (*4-mysql/Dockerfile*)](https://github.com/dhoer/docker-flyway/blob/master/4-mysql/Dockerfile)
--	[`4.1.1-mysql-5.1.40-alpine`, `4.1-mysql-5.1-alpine`, `4-mysql-5-alpine`, `mysql-5-alpine`, `mysql-alpine` (*4-mysql/alpine/Dockerfile*)](https://github.com/dhoer/docker-flyway/blob/master/4-mysql/alpine/Dockerfile)
+-	[`4.1.1-mysql-5.1.41`, `4.1-mysql-5.1`, `4-mysql-5`, `mysql-5`, `mysql` (*4-mysql/Dockerfile*)](https://github.com/dhoer/docker-flyway/blob/master/4-mysql/Dockerfile)
+-	[`4.1.1-mysql-5.1.41-alpine`, `4.1-mysql-5.1-alpine`, `4-mysql-5-alpine`, `mysql-5-alpine`, `mysql-alpine` (*4-mysql/alpine/Dockerfile*)](https://github.com/dhoer/docker-flyway/blob/master/4-mysql/alpine/Dockerfile)
 
 ## Getting started
 
