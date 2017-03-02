@@ -29,22 +29,22 @@ CREATE TABLE MyTable (
 );
 
 ```
-
+                                                             
 ### Linux
-`docker run --rm -v $(pwd):/flyway/sql dhoer/flyway -url=jdbc:mysql/mydb -schemas=myschema -user=root -password=P@ssw0rd migrate`
+`docker run --rm -v $(pwd):/flyway/sql dhoer/flyway -url=jdbc:mysql://mydb -schemas=myschema -user=root -password=P@ssw0rd migrate`
 
 ### Windows 10 (Docker for Windows)
 CMD:
 
-`docker run --rm -v %cd%:/flyway/sql dhoer/flyway -url=jdbc:mysql/mydb -schemas=myschema -user=root -password=P@ssw0rd migrate`
+`docker run --rm -v %cd%:/flyway/sql dhoer/flyway -url=jdbc:mysql://mydb -schemas=myschema -user=root -password=P@ssw0rd migrate`
 
 PowerShell:
 
-`docker run --rm -v C:\FolderWhereYourScriptsReside:/flyway/sql dhoer/flyway -url=jdbc:mysql/mydb -schemas=myschema -user=root -password=P@ssw0rd migrate`
+`docker run --rm -v C:\FolderWhereYourScriptsReside:/flyway/sql dhoer/flyway -url=jdbc:mysql://mydb -schemas=myschema -user=root -password=P@ssw0rd migrate`
 
 ### Windows 7 (Docker Toolbox)
 
-`docker run --rm -v /c/Users/FolderWhereYourScriptsReside:/flyway/sql dhoer/flyway -url=jdbc:mysql/mydb -schemas=myschema -user=root -password=P@ssw0rd migrate`
+`docker run --rm -v /c/Users/FolderWhereYourScriptsReside:/flyway/sql dhoer/flyway -url=jdbc:mysql://mydb -schemas=myschema -user=root -password=P@ssw0rd migrate`
 
 ### Example docker-compose.yml
 
