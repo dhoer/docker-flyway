@@ -4,7 +4,7 @@ RUN apk --no-cache add openssl
 
 WORKDIR /flyway
 
-ENV FLYWAY_VERSION 4.1.1
+ENV FLYWAY_VERSION 4.1.2
 
 RUN wget https://repo1.maven.org/maven2/org/flywaydb/flyway-commandline/${FLYWAY_VERSION}/flyway-commandline-${FLYWAY_VERSION}.tar.gz \
   && tar -xzf flyway-commandline-${FLYWAY_VERSION}.tar.gz \
