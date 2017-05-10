@@ -13,7 +13,7 @@ RUN wget https://repo1.maven.org/maven2/org/flywaydb/flyway-commandline/${FLYWAY
   && sed -i 's/bash/sh/' /flyway/flyway \
   && ln -s /flyway/flyway /usr/local/bin/flyway
 
-ENV MYSQL_DRIVER_VERSION 5.1.41
+ENV MYSQL_DRIVER_VERSION 5.1.42
 
 RUN wget https://repo1.maven.org/maven2/mysql/mysql-connector-java/${MYSQL_DRIVER_VERSION}/mysql-connector-java-${MYSQL_DRIVER_VERSION}.jar \
   && mv mysql-connector-java-${MYSQL_DRIVER_VERSION}.jar drivers
