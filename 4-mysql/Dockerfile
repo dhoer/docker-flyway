@@ -9,7 +9,7 @@ RUN curl -L https://repo1.maven.org/maven2/org/flywaydb/flyway-commandline/${FLY
   && rm flyway-commandline-${FLYWAY_VERSION}.tar.gz \
   && ln -s /flyway/flyway /usr/local/bin/flyway
 
-ENV MYSQL_DRIVER_VERSION 5.1.42
+ENV MYSQL_DRIVER_VERSION 5.1.43
 
 RUN curl -L https://repo1.maven.org/maven2/mysql/mysql-connector-java/${MYSQL_DRIVER_VERSION}/mysql-connector-java-${MYSQL_DRIVER_VERSION}.jar -o mysql-connector-java-${MYSQL_DRIVER_VERSION}.jar \
   && mv mysql-connector-java-${MYSQL_DRIVER_VERSION}.jar drivers
