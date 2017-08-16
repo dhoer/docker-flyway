@@ -5,8 +5,9 @@
 [docker]: https://hub.docker.com/r/dhoer/flyway/
 
 Dockerized [flyway command-line tool](https://flywaydb.org/getstarted/firststeps/commandline) with options
-to use a MariaDB Connector/J driver version other than the one that ships with flyway, or
-to use MySQL Connector/J driver instead of MariaDB Connector/J driver for jdbc:mysql: connections.
+to use:
+- MariaDB Connector/J driver version other than the one that ships with flyway
+- MySQL Connector/J driver instead of MariaDB Connector/J driver for jdbc:mysql: connections
 
 ## Supported tags and respective `Dockerfile` links
 
