@@ -4,17 +4,16 @@
 
 [docker]: https://hub.docker.com/r/dhoer/flyway/
 
-Dockerized [flyway command-line tool](https://flywaydb.org/getstarted/firststeps/commandline) with options
-to use:
-- MariaDB Connector/J driver version other than the one that ships with flyway
+Dockerized [flyway command-line tool](https://flywaydb.org/getstarted/firststeps/commandline) with options to use:
+- MariaDB Connector/J driver version newer than the one that ships with flyway
 - MySQL Connector/J driver instead of MariaDB Connector/J driver for jdbc:mysql: connections
 
 ## Supported tags and respective `Dockerfile` links
 
 -	[`4.2.0`, `4.2`, `4`, `latest` (*4/Dockerfile*)](https://github.com/dhoer/docker-flyway/blob/master/4/Dockerfile)
 -	[`4.2.0-alpine`, `4.2-alpine`, `4-alpine`, `alpine` (*4/alpine/Dockerfile*)](https://github.com/dhoer/docker-flyway/blob/master/4/alpine/Dockerfile)
--	[`4.2.0-mariadb-1.6.3`, `4.2-mariadb-1.6`, `4-mariadb-1`, `mariadb` (*4-mariadb/Dockerfile*)](https://github.com/dhoer/docker-flyway/blob/master/4-mariadb/Dockerfile)
--	[`4.2.0-mariadb-1.6.3-alpine`, `4.2-mariadb-1.6-alpine`, `4-mariadb-1-alpine`, `mariadb-alpine` (*4-mariadb/alpine/Dockerfile*)](https://github.com/dhoer/docker-flyway/blob/master/4-mariadb/alpine/Dockerfile)
+-	[`4.2.0-mariadb-1.6.4`, `4.2-mariadb-1.6`, `4-mariadb-1`, `mariadb` (*4-mariadb/Dockerfile*)](https://github.com/dhoer/docker-flyway/blob/master/4-mariadb/Dockerfile)
+-	[`4.2.0-mariadb-1.6.4-alpine`, `4.2-mariadb-1.6-alpine`, `4-mariadb-1-alpine`, `mariadb-alpine` (*4-mariadb/alpine/Dockerfile*)](https://github.com/dhoer/docker-flyway/blob/master/4-mariadb/alpine/Dockerfile)
 -	[`4.2.0-mysql-5.1.43`, `4.2-mysql-5.1`, `4-mysql-5`, `mysql-5`, `mysql` (*4-mysql/Dockerfile*)](https://github.com/dhoer/docker-flyway/blob/master/4-mysql/Dockerfile)
 -	[`4.2.0-mysql-5.1.43-alpine`, `4.2-mysql-5.1-alpine`, `4-mysql-5-alpine`, `mysql-5-alpine`, `mysql-alpine` (*4-mysql/alpine/Dockerfile*)](https://github.com/dhoer/docker-flyway/blob/master/4-mysql/alpine/Dockerfile)
 
