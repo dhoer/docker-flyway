@@ -10,7 +10,7 @@ RUN curl -L https://repo1.maven.org/maven2/org/flywaydb/flyway-commandline/${FLY
   && rm drivers/mariadb-java-client-*.jar \
   && ln -s /flyway/flyway /usr/local/bin/flyway
 
-ENV MARIADB_DRIVER_VERSION 1.6.4
+ENV MARIADB_DRIVER_VERSION 1.6.5
 
 RUN curl -L https://repo1.maven.org/maven2/org/mariadb/jdbc/mariadb-java-client/${MARIADB_DRIVER_VERSION}/mariadb-java-client-${MARIADB_DRIVER_VERSION}.jar -o mariadb-java-client-${MARIADB_DRIVER_VERSION}.jar \
   && mv mariadb-java-client-${MARIADB_DRIVER_VERSION}.jar drivers
