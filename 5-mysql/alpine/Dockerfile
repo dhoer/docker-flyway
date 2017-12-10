@@ -14,8 +14,8 @@ RUN apk --no-cache add openssl \
 
 ENV MYSQL_DRIVER_VERSION 5.1.45
 
-RUN wget -o drivers/mysql-connector-java-${MYSQL_DRIVER_VERSION}.jar \
-     https://repo1.maven.org/maven2/mysql/mysql-connector-java/${MYSQL_DRIVER_VERSION}/mysql-connector-java-${MYSQL_DRIVER_VERSION}.jar
+RUN wget -O drivers/mysql-connector-java-${MYSQL_DRIVER_VERSION}.jar \
+    https://repo1.maven.org/maven2/mysql/mysql-connector-java/${MYSQL_DRIVER_VERSION}/mysql-connector-java-${MYSQL_DRIVER_VERSION}.jar
 
 ENTRYPOINT ["flyway"]
 CMD ["--help"]
