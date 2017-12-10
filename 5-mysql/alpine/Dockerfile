@@ -2,21 +2,20 @@ FROM openjdk:8-jre-alpine
 
 WORKDIR /flyway
 
-ENV FLYWAY_VERSION 4.2.0
+ENV FLYWAY_VERSION 5.0.2
 
 RUN apk --no-cache add openssl \
   && wget https://repo1.maven.org/maven2/org/flywaydb/flyway-commandline/${FLYWAY_VERSION}/flyway-commandline-${FLYWAY_VERSION}.tar.gz \
   && tar -xzf flyway-commandline-${FLYWAY_VERSION}.tar.gz \
   && mv flyway-${FLYWAY_VERSION}/* . \
   && rm flyway-commandline-${FLYWAY_VERSION}.tar.gz \
-  && rm drivers/mariadb-java-client-*.jar \
   && sed -i 's/bash/sh/' /flyway/flyway \
   && ln -s /flyway/flyway /usr/local/bin/flyway
 
-ENV MARIADB_DRIVER_VERSION 1.7.0
+ENV MYSQL_DRIVER_VERSION 5.1.45
 
-RUN wget -O drivers/mariadb-java-client-${MARIADB_DRIVER_VERSION}.jar \
-    https://repo1.maven.org/maven2/org/mariadb/jdbc/mariadb-java-client/${MARIADB_DRIVER_VERSION}/mariadb-java-client-${MARIADB_DRIVER_VERSION}.jar
+RUN wget -O drivers/mysql-connector-java-${MYSQL_DRIVER_VERSION}.jar \
+    https://repo1.maven.org/maven2/mysql/mysql-connector-java/${MYSQL_DRIVER_VERSION}/mysql-connector-java-${MYSQL_DRIVER_VERSION}.jar
 
 ENTRYPOINT ["flyway"]
 CMD ["--help"]

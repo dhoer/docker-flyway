@@ -1,12 +1,11 @@
 FROM openjdk:8-jre-alpine
 
-RUN apk --no-cache add openssl
-
 WORKDIR /flyway
 
 ENV FLYWAY_VERSION 4.2.0
 
-RUN wget https://repo1.maven.org/maven2/org/flywaydb/flyway-commandline/${FLYWAY_VERSION}/flyway-commandline-${FLYWAY_VERSION}.tar.gz \
+RUN apk --no-cache add openssl \
+  && wget https://repo1.maven.org/maven2/org/flywaydb/flyway-commandline/${FLYWAY_VERSION}/flyway-commandline-${FLYWAY_VERSION}.tar.gz \
   && tar -xzf flyway-commandline-${FLYWAY_VERSION}.tar.gz \
   && mv flyway-${FLYWAY_VERSION}/* . \
   && rm flyway-commandline-${FLYWAY_VERSION}.tar.gz \
@@ -15,8 +14,8 @@ RUN wget https://repo1.maven.org/maven2/org/flywaydb/flyway-commandline/${FLYWAY
 
 ENV MYSQL_DRIVER_VERSION 5.1.45
 
-RUN wget -O /flyway/drivers/mysql-connector-java-${MYSQL_DRIVER_VERSION}.jar \
-     https://repo1.maven.org/maven2/mysql/mysql-connector-java/${MYSQL_DRIVER_VERSION}/mysql-connector-java-${MYSQL_DRIVER_VERSION}.jar
+RUN wget -O drivers/mysql-connector-java-${MYSQL_DRIVER_VERSION}.jar \
+    https://repo1.maven.org/maven2/mysql/mysql-connector-java/${MYSQL_DRIVER_VERSION}/mysql-connector-java-${MYSQL_DRIVER_VERSION}.jar
 
 ENTRYPOINT ["flyway"]
 CMD ["--help"]
