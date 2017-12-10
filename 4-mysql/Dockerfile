@@ -4,15 +4,16 @@ WORKDIR /flyway
 
 ENV FLYWAY_VERSION 4.2.0
 
-RUN curl -L https://repo1.maven.org/maven2/org/flywaydb/flyway-commandline/${FLYWAY_VERSION}/flyway-commandline-${FLYWAY_VERSION}.tar.gz -o flyway-commandline-${FLYWAY_VERSION}.tar.gz \
+RUN curl -o flyway-commandline-${FLYWAY_VERSION}.tar.gz \
+    https://repo1.maven.org/maven2/org/flywaydb/flyway-commandline/${FLYWAY_VERSION}/flyway-commandline-${FLYWAY_VERSION}.tar.gz \
   && tar -xzf flyway-commandline-${FLYWAY_VERSION}.tar.gz --strip-components=1 \
   && rm flyway-commandline-${FLYWAY_VERSION}.tar.gz \
   && ln -s /flyway/flyway /usr/local/bin/flyway
 
-ENV MYSQL_DRIVER_VERSION 5.1.44
+ENV MYSQL_DRIVER_VERSION 5.1.45
 
-RUN curl -L https://repo1.maven.org/maven2/mysql/mysql-connector-java/${MYSQL_DRIVER_VERSION}/mysql-connector-java-${MYSQL_DRIVER_VERSION}.jar -o mysql-connector-java-${MYSQL_DRIVER_VERSION}.jar \
-  && mv mysql-connector-java-${MYSQL_DRIVER_VERSION}.jar drivers
+RUN curl -o /flyway/drivers/mysql-connector-java-${MYSQL_DRIVER_VERSION}.jar
+    https://repo1.maven.org/maven2/mysql/mysql-connector-java/${MYSQL_DRIVER_VERSION}/mysql-connector-java-${MYSQL_DRIVER_VERSION}.jar
 
 ENTRYPOINT ["flyway"]
 CMD ["--help"]
