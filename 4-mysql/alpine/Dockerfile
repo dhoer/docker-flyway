@@ -15,7 +15,7 @@ RUN wget https://repo1.maven.org/maven2/org/flywaydb/flyway-commandline/${FLYWAY
 
 ENV MYSQL_DRIVER_VERSION 5.1.45
 
-RUN wget -o /flyway/drivers/mysql-connector-java-${MYSQL_DRIVER_VERSION}.jar \
+RUN wget -O /flyway/drivers/mysql-connector-java-${MYSQL_DRIVER_VERSION}.jar \
      https://repo1.maven.org/maven2/mysql/mysql-connector-java/${MYSQL_DRIVER_VERSION}/mysql-connector-java-${MYSQL_DRIVER_VERSION}.jar
 
 ENTRYPOINT ["flyway"]
