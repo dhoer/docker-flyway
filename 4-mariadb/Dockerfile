@@ -13,7 +13,7 @@ RUN curl -o flyway-commandline-${FLYWAY_VERSION}.tar.gz \
 
 ENV MARIADB_DRIVER_VERSION 1.7.0
 
-RUN curl -o /flyway/drivers/mariadb-java-client-${MARIADB_DRIVER_VERSION}.jar \
+RUN curl -o drivers/mariadb-java-client-${MARIADB_DRIVER_VERSION}.jar \
     https://repo1.maven.org/maven2/org/mariadb/jdbc/mariadb-java-client/${MARIADB_DRIVER_VERSION}/mariadb-java-client-${MARIADB_DRIVER_VERSION}.jar
 
 ENTRYPOINT ["flyway"]
