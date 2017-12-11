@@ -8,7 +8,7 @@ Official [Flyway Command-line Docker images](https://github.com/flyway/flyway-do
 
 Extends Flyway Command-line Docker images with options to use:
 - MySQL Connector/J driver instead of MariaDB Connector/J driver for jdbc:mysql: connections
-- MariaDB Connector/J driver version newer than the one that ships with flyway (v4.2.0 only)
+- MariaDB Connector/J driver version newer than the one that ships with flyway (v4.2.0 only since v5.0.2 has latest driver)
 
 ## Supported tags and respective `Dockerfile` links
 
