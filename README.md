@@ -53,8 +53,7 @@ PowerShell:
 
 ### Example docker-compose.yml
 
-To run both Flyway and the database that will be migrated in containers, you can use a `docker-compose.yml` file that
-starts and links both containers.
+To run both Flyway and the database that will be migrated in containers, you can use a `docker-compose.yml` file that starts and links both containers.
 
 ```
 version: '3'
