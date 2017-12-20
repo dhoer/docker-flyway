@@ -12,8 +12,8 @@ Extends Flyway Command-line Docker images with options to use:
 
 ## Supported tags and respective `Dockerfile` links
 
-- [`5.0.2-mysql-5.1.45`, `5.0-mysql-5.1`, `5-mysql-5`, `mysql-5`, `mysql` (*5-mysql/Dockerfile*)](https://github.com/dhoer/docker-flyway/blob/master/5-mysql/Dockerfile)
-- [`5.0.2-mysql-5.1.45-alpine`, `5.0-mysql-5.1-alpine`, `5-mysql-5-alpine`, `mysql-5-alpine`, `mysql-alpine` (*5-mysql/alpine/Dockerfile*)](https://github.com/dhoer/docker-flyway/blob/master/5-mysql/alpine/Dockerfile)
+- [`5.0.3-mysql-5.1.45`, `5.0-mysql-5.1`, `5-mysql-5`, `mysql-5`, `mysql` (*5-mysql/Dockerfile*)](https://github.com/dhoer/docker-flyway/blob/master/5-mysql/Dockerfile)
+- [`5.0.3-mysql-5.1.45-alpine`, `5.0-mysql-5.1-alpine`, `5-mysql-5-alpine`, `mysql-5-alpine`, `mysql-alpine` (*5-mysql/alpine/Dockerfile*)](https://github.com/dhoer/docker-flyway/blob/master/5-mysql/alpine/Dockerfile)
 
 - [`4.2.0-mysql-5.1.45`, `4.2-mysql-5.1`, `4-mysql-5` (*4-mysql/Dockerfile*)](https://github.com/dhoer/docker-flyway/blob/master/4-mysql/Dockerfile)
 - [`4.2.0-mysql-5.1.45-alpine`, `4.2-mysql-5.1-alpine`, `4-mysql-5-alpine` (*4-mysql/alpine/Dockerfile*)](https://github.com/dhoer/docker-flyway/blob/master/4-mysql/alpine/Dockerfile)

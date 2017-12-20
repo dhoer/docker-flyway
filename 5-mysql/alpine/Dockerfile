@@ -1,4 +1,4 @@
-FROM boxfuse/flyway:5.0.2-alpine
+FROM boxfuse/flyway:5.0.3-alpine
 
 ENV MYSQL_DRIVER_VERSION 5.1.45
 
