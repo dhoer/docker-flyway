@@ -4,13 +4,9 @@
 
 [docker]: https://hub.docker.com/r/dhoer/flyway/
 
-Official
-[Flyway Command-line Docker images](https://github.com/flyway/flyway-docker)
-are now available!
+Official [Flyway Command-line Docker images](https://github.com/flyway/flyway-docker) are now available!
 
-Extends Official Flyway Command-line Docker images to use MySQL
-Connector/J driver instead of MariaDB Connector/J driver for
-`jdbc:mysql:` connections.
+Extends Official Flyway Command-line Docker images to use MySQL Connector/J driver instead of MariaDB Connector/J driver for `jdbc:mysql:` connections.
 
 ## Supported tags and respective `Dockerfile` links
 
