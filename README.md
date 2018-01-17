@@ -8,12 +8,12 @@ Extends [Official Flyway Command-line Docker images](https://github.com/flyway/f
 
 ## Supported tags and respective `Dockerfile` links
 
-- [`5.0.5-mysql-5.1.45`, `5.0-mysql-5.1`, `5-mysql-5`, `mysql`, `latest` (*Dockerfile*)](https://github.com/dhoer/docker-flyway/blob/master/Dockerfile)
-- [`5.0.5-mysql-5.1.45-alpine`, `5.0-mysql-5.1-alpine`, `5-mysql-5-alpine`, `mysql-alpine`, `alpine` (*alpine/Dockerfile*)](https://github.com/dhoer/docker-flyway/blob/master/alpine/Dockerfile)
+- [`5.0.6-mysql-5.1.45`, `5.0-mysql-5.1`, `5-mysql-5`, `mysql`, `latest` (*Dockerfile*)](https://github.com/dhoer/docker-flyway/blob/master/Dockerfile)
+- [`5.0.6-mysql-5.1.45-alpine`, `5.0-mysql-5.1-alpine`, `5-mysql-5-alpine`, `mysql-alpine`, `alpine` (*alpine/Dockerfile*)](https://github.com/dhoer/docker-flyway/blob/master/alpine/Dockerfile)
 
 ## Getting started
 
-`docker run dhoer/flyway [flyway cli arguments here]`
+`docker run dhoer/flyway:alpine [flyway cli arguments here]`
 
 ## Example
 
@@ -27,20 +27,20 @@ CREATE TABLE MyTable (
 ```
                                                              
 ### Linux
-`docker run --rm -v $(pwd):/flyway/sql dhoer/flyway -url=jdbc:mysql://mydb -schemas=myschema -user=root -password=P@ssw0rd migrate`
+`docker run --rm -v $(pwd):/flyway/sql dhoer/flyway:alpine -url=jdbc:mysql://mydb -schemas=myschema -user=root -password=P@ssw0rd migrate`
 
 ### Windows 10 (Docker for Windows)
 CMD:
 
-`docker run --rm -v %cd%:/flyway/sql dhoer/flyway -url=jdbc:mysql://mydb -schemas=myschema -user=root -password=P@ssw0rd migrate`
+`docker run --rm -v %cd%:/flyway/sql dhoer/flyway:alpine -url=jdbc:mysql://mydb -schemas=myschema -user=root -password=P@ssw0rd migrate`
 
 PowerShell:
 
-`docker run --rm -v C:\FolderWhereYourScriptsReside:/flyway/sql dhoer/flyway -url=jdbc:mysql://mydb -schemas=myschema -user=root -password=P@ssw0rd migrate`
+`docker run --rm -v C:\FolderWhereYourScriptsReside:/flyway/sql dhoer/flyway:alpine -url=jdbc:mysql://mydb -schemas=myschema -user=root -password=P@ssw0rd migrate`
 
 ### Windows 7 (Docker Toolbox)
 
-`docker run --rm -v /c/Users/FolderWhereYourScriptsReside:/flyway/sql dhoer/flyway -url=jdbc:mysql://mydb -schemas=myschema -user=root -password=P@ssw0rd migrate`
+`docker run --rm -v /c/Users/FolderWhereYourScriptsReside:/flyway/sql dhoer/flyway:alpine -url=jdbc:mysql://mydb -schemas=myschema -user=root -password=P@ssw0rd migrate`
 
 ### Example docker-compose.yml
 
@@ -50,7 +50,7 @@ To run both Flyway and the database that will be migrated in containers, you can
 version: '3'
 services:
   flyway:
-    image: dhoer/flyway
+    image: dhoer/flyway:alpine
     command: -url=jdbc:mysql://db -schemas=myschema -user=root -password=P@ssw0rd migrate
     volumes:
       - .:/flyway/sql
