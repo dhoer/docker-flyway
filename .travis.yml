@@ -6,11 +6,11 @@ services:
   - docker
 
 before_script:
-  - docker-compose build
   - docker-compose up -d db
   - sleep 30
 
 script:
+  - docker-compose build
   - docker-compose up flyway
   - docker-compose up flyway-alpine
 
