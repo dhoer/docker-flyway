@@ -4,6 +4,10 @@
 
 [docker]: https://hub.docker.com/r/dhoer/flyway/
 
+[![Build Status](https://img.shields.io/travis/docker-flyway.svg?branch=master&style=flat-square)][travis]
+
+[travis]: https://travis-ci.org/dhoer/docker-flyway
+
 Extends [Official Flyway Command-line Docker images](https://github.com/flyway/flyway-docker) to use MySQL Connector/J driver instead of MariaDB Connector/J driver for `jdbc:mysql:` connections.
 
 ## Supported tags and respective `Dockerfile` links
