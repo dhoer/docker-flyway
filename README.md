@@ -1,8 +1,6 @@
 # Docker Flyway
 
-[![Docker Auto Build](https://img.shields.io/docker/automated/dhoer/flyway.svg?style=flat-square)][docker] [![travis](http://img.shields.io/travis/dhoer/docker-flyway/master.svg?style=flat-square)][travis]
-
-[docker]: https://hub.docker.com/r/dhoer/flyway/ [travis]: https://travis-ci.org/dhoer/docker-flyway
+[![Docker Auto Build](https://img.shields.io/docker/automated/dhoer/flyway.svg?style=flat-square)]( https://hub.docker.com/r/dhoer/flyway/) [![travis](http://img.shields.io/travis/dhoer/docker-flyway/master.svg?style=flat-square)](https://travis-ci.org/dhoer/docker-flyway)
 
 Extends [Official Flyway Command-line Docker images](https://github.com/flyway/flyway-docker) to use MySQL Connector/J driver instead of MariaDB Connector/J driver for `jdbc:mysql:` connections.
 
