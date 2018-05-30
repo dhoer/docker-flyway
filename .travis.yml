@@ -5,6 +5,10 @@ language: ruby
 services:
   - docker
 
+env:
+  - COMPOSE_FILE=mysql5/docker-compose.yml
+  - COMPOSE_FILE=mysql8/docker-compose.yml
+
 before_script:
   - docker-compose up -d db
   - sleep 30
