@@ -6,8 +6,8 @@ services:
   - docker
 
 env:
-  - COMPOSE_PROJECT_NAME=mysql5 COMPOSE_FILE=docker-compose.mysql5.yml
-  - COMPOSE_PROJECT_NAME=mysql8 COMPOSE_FILE=docker-compose.mysql8.yml
+  - COMPOSE_FILE=docker-compose.mysql5.yml
+  - COMPOSE_FILE=docker-compose.mysql8.yml
 
 before_script:
   - docker-compose up -d db
