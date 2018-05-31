@@ -2,7 +2,7 @@ version: "3"
 services:
   flyway:
     build:
-      context: .
+      context: mysql5
     command: -url=jdbc:mysql://db -schemas=myschema -user=root -password=P@ssw0rd migrate
     volumes:
       - ./test/sql:/flyway/sql
@@ -10,13 +10,13 @@ services:
     - db
   flyway-alpine:
     build:
-      context: ./alpine
+      context: mysql5/alpine
     command: -url=jdbc:mysql://db -schemas=myschema -user=root -password=P@ssw0rd migrate
     volumes:
       - ./test/sql:/flyway/sql
     depends_on:
     - db
   db:
-    image: mysql:8.0.11
+    image: mysql:5
     environment:
     - MYSQL_ROOT_PASSWORD=P@ssw0rd
