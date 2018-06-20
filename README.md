@@ -6,10 +6,10 @@ Extends [Official Flyway Command-line Docker images](https://github.com/flyway/f
 
 ## Supported tags and respective `Dockerfile` links
 
-- [`5.1.1-mysql-8.0.11`, `5.1-mysql-8.0`, `5-mysql-8`, `mysql8`, `mysql`, `latest` (*mysql8/Dockerfile*)](https://github.com/dhoer/docker-flyway/blob/master/mysql8/Dockerfile)
-- [`5.1.1-mysql-8.0.11-alpine`, `5.1-mysql-8.0-alpine`, `5-mysql-8-alpine`, `mysql8-alpine`, `mysql-alpine`, `alpine` (*mysql8/alpine/Dockerfile*)](https://github.com/dhoer/docker-flyway/blob/master/mysql8/alpine/Dockerfile)
-- [`5.1.1-mysql-5.1.46`, `5.1-mysql-5.1`, `5-mysql-5`, `mysql5` (*mysql5/Dockerfile*)](https://github.com/dhoer/docker-flyway/blob/master/mysql5/Dockerfile)
-- [`5.1.1-mysql-5.1.46-alpine`, `5.1-mysql-5.1-alpine`, `5-mysql-5-alpine`, `mysql5-alpine` (*mysql5/alpine/Dockerfile*)](https://github.com/dhoer/docker-flyway/blob/master/mysql5/alpine/Dockerfile)
+- [`5.1.3-mysql-8.0.11`, `5.1-mysql-8.0`, `5-mysql-8`, `mysql8`, `mysql`, `latest` (*mysql8/Dockerfile*)](https://github.com/dhoer/docker-flyway/blob/master/mysql8/Dockerfile)
+- [`5.1.3-mysql-8.0.11-alpine`, `5.1-mysql-8.0-alpine`, `5-mysql-8-alpine`, `mysql8-alpine`, `mysql-alpine`, `alpine` (*mysql8/alpine/Dockerfile*)](https://github.com/dhoer/docker-flyway/blob/master/mysql8/alpine/Dockerfile)
+- [`5.1.3-mysql-5.1.46`, `5.1-mysql-5.1`, `5-mysql-5`, `mysql5` (*mysql5/Dockerfile*)](https://github.com/dhoer/docker-flyway/blob/master/mysql5/Dockerfile)
+- [`5.1.3-mysql-5.1.46-alpine`, `5.1-mysql-5.1-alpine`, `5-mysql-5-alpine`, `mysql5-alpine` (*mysql5/alpine/Dockerfile*)](https://github.com/dhoer/docker-flyway/blob/master/mysql5/alpine/Dockerfile)
 
 ## Getting started
 
