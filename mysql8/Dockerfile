@@ -1,6 +1,6 @@
 FROM boxfuse/flyway:5.1.4
 
-ENV MYSQL_DRIVER_VERSION 8.0.11
+ENV MYSQL_DRIVER_VERSION 8.0.12
 
 RUN curl -o drivers/mysql-connector-java-${MYSQL_DRIVER_VERSION}.jar \
     https://repo1.maven.org/maven2/mysql/mysql-connector-java/${MYSQL_DRIVER_VERSION}/mysql-connector-java-${MYSQL_DRIVER_VERSION}.jar
